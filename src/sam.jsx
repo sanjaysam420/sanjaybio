@@ -47,12 +47,30 @@ function Sam() {
       <section className="center-bar">
         <h2 className="skills-title">Skills</h2>
         <div className="info-bar">
-          <img src={html} alt="Html" title="HTML5" />
-          <img src={reactLogo} alt="React" title="React" />
-          <img src={css} alt="Css" title="CSS3" />
-          <img src={python} alt="Python" title="Python" />
-          <img src={js} alt="Js" title="JavaScript" />
-          <img src={sql} alt="Sql" title="SQL" />
+          <div className="skill-card">
+            <img src={html} alt="Html" />
+            <span>HTML5</span>
+          </div>
+          <div className="skill-card">
+            <img src={reactLogo} alt="React" />
+            <span>React</span>
+          </div>
+          <div className="skill-card">
+            <img src={css} alt="Css" />
+            <span>CSS3</span>
+          </div>
+          <div className="skill-card">
+            <img src={python} alt="Python" />
+            <span>Python</span>
+          </div>
+          <div className="skill-card">
+            <img src={js} alt="Js" />
+            <span>JavaScript</span>
+          </div>
+          <div className="skill-card">
+            <img src={sql} alt="Sql" />
+            <span>SQL</span>
+          </div>
         </div>
       </section>
     </Layout>
