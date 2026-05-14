@@ -196,9 +196,9 @@ body {
 }
 
 .skill-card {
-  background: rgba(15, 27, 43, 0.6);
+  background: rgba(15, 27, 43, 0.8) !important;
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   padding: 40px 20px;
   display: flex;
@@ -206,9 +206,21 @@ body {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
   position: relative;
   z-index: 1;
+  transition: none !important; /* Disable all transitions */
+  pointer-events: none; /* Disable all mouse interactions to be safe */
+}
+
+/* Explicitly disable any hover or active states */
+.skill-card:hover, 
+.skill-card:active, 
+.skill-card:focus {
+  background: rgba(15, 27, 43, 0.8) !important;
+  transform: none !important;
+  border-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
 }
 
 .skill-card img {
@@ -219,14 +231,16 @@ body {
   background: rgba(255, 255, 255, 0.03);
   border-radius: 18px;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+  transition: none !important;
 }
 
 .skill-card span {
   font-size: 18px;
   font-weight: 700;
-  color: #fff;
+  color: #fff !important;
   letter-spacing: 1px;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: none !important;
 }
 
 @media (max-width: 992px) {
